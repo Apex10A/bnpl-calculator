@@ -62,7 +62,7 @@ export const useCalculator = () => {
     const monthlyRepayment = monthlyFinanceCost + interestAmount;
 
     // Step 7: Calculate total repayment
-    const totalRepayment = monthlyRepayment * tenure;
+    const totalRepayment = downPayment + (monthlyRepayment * tenure);
 
     // Update results
     setResults({
